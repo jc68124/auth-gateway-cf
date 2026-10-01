@@ -1,0 +1,48 @@
+{
+	"name": "@jc68124/auth-gateway-cf",
+	"version": "0.0.1",
+	"type": "module",
+	"sideEffects": false,
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"kysely": "0.29.6",
+		"pg": "8.23.1",
+		"unique-names-generator": "4.7.1"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "5.20261001.1",
+		"@eslint/js": "9.38.0",
+		"@types/pg": "8.23.1",
+		"eslint": "9.38.0",
+		"eslint-config-prettier": "10.1.8",
+		"eslint-plugin-prettier": "5.5.4",
+		"globals": "16.4.0",
+		"jiti": "2.7.0",
+		"prettier": "3.9.9",
+		"typescript": "5.9.3",
+		"typescript-eslint": "8.59.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jc68124/auth-gateway-cf.git"
+	},
+	"engines": {
+		"node": ">=22"
+	},
+	"license": "MIT"
+}
